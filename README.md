@@ -61,3 +61,4 @@ Test files under `src/game/tests` can be run from an IDE with the required JUnit
 
 - This is an academic project.
 - Development was done by the project owner with AI assistance for ideation, debugging, and refinement.
+- AI tools used during development included GPT models, GLM-5, Kimi K2.5, and Minimax m2.7.
