@@ -1,94 +1,62 @@
-# DooRDash - University Project
+# DooRDash University Project
 
-A Java-based game development project created as part of a university course. This repository showcases progressive development through multiple milestones, combining traditional programming practices with AI-assisted development.
+Java university project developed in milestone-based stages, with AI-assisted iteration during development.
 
-## 📋 Overview
+## Overview
 
-DooRDash is a milestone-based project that demonstrates evolving game mechanics and software engineering principles. The project is structured to track progress across different development phases, with each milestone building upon the previous one.
+DooRDash is a turn-based game engine project.  
+The repository is organized by milestones so each folder represents a specific stage of progress.
 
-## 🗂️ Project Structure
+## Repository Structure
 
-```
+```text
 DooRDash-UniProj-/
-├── DooRDasH/          # Milestone 1
-│   ├── src/           # Source code
-│   ├── cards.csv      # Card data
-│   ├── cells.csv      # Cell data
-│   └── monsters.csv   # Monster data
-├── DoorDashM2/        # Milestone 2
-│   ├── src/           # Source code
-│   ├── cards.csv      # Card data
-│   ├── cells.csv      # Cell data
-│   └── monsters.csv   # Monster data
-└── README.md          # This file
+├── DooRDasH/      # Milestone 1
+├── DoorDashM2/    # Milestone 2
+└── README.md
 ```
 
-### Milestones
+Each milestone folder contains:
+- `src/` (Java source code)
+- `cards.csv`
+- `cells.csv`
+- `monsters.csv`
 
-- **Milestone 1 (DooRDasH)**: Initial game implementation
-- **Milestone 2 (DoorDashM2)**: Enhanced features and improvements
-- **Milestone 3**: Coming soon
+## Tech Stack
 
-## 🛠️ Technology Stack
+- Java
+- CSV-based game data loading
 
-- **Language**: Java
-- **Development Approach**: AI-Assisted Programming
-- **AI Models Used**: 
-  - GPT-5.5
-  - GPT-5.4 Series
-  - GLM-5
-  - Kimi K2.5
-  - Minimax m2.7
-  - And more
-
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
-- Java Development Kit (JDK) 8 or higher
-- A Java IDE (IntelliJ IDEA, Eclipse, or VS Code with Java extensions)
+- JDK 8+ (or newer)
+- Any Java IDE (IntelliJ IDEA, Eclipse, VS Code) or command line
 
-### Installation
+### Compile (command line)
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/MatteioCodes/DooRDash-UniProj-.git
-   cd DooRDash-UniProj-
-   ```
+From the repository root:
 
-2. Navigate to the desired milestone folder:
-   ```bash
-   cd DooRDasH        # For Milestone 1
-   # or
-   cd DoorDashM2      # For Milestone 2
-   ```
+```bash
+# Milestone 1 engine sources
+find DooRDasH/src/game/engine -name "*.java" | sort > /tmp/m1_sources.txt
+javac -d /tmp/m1_out @/tmp/m1_sources.txt
 
-3. Compile and run the project using your preferred Java IDE or command line.
+# Milestone 2 engine sources
+find DoorDashM2/src/game/engine -name "*.java" | sort > /tmp/m2_sources.txt
+javac -d /tmp/m2_out @/tmp/m2_sources.txt
+```
 
-## 📚 Development Notes
+You can also open either milestone in your IDE and run the tests under `src/game/tests`.
 
-- All code in this repository is written by the project author
-- Development leverages AI assistance to enhance productivity and code quality
-- Each milestone represents a significant development phase with distinct features and improvements
-- CSV files contain game data for cards, cells, and monsters
+## Milestones
 
-## 🎓 Academic Context
+- **Milestone 1 (`DooRDasH`)**: core game implementation
+- **Milestone 2 (`DoorDashM2`)**: expanded engine and gameplay elements
+- **Milestone 3**: planned
 
-This is a university project developed for educational purposes. It demonstrates:
-- Progressive software development
-- Version control best practices
-- Modular code organization
-- Data-driven game design
-- AI-assisted development workflows
+## Notes
 
-## 🤝 Acknowledgments
-
-This project was developed with the assistance of various AI models, representing a modern approach to software development education that combines traditional programming skills with AI collaboration tools.
-
-## 📝 License
-
-This project is created for academic purposes as part of a university course.
-
----
-
-**Note**: This is an educational project and may contain experimental features and ongoing improvements across different milestones.
+- This is an academic project.
+- Development was done by the project owner with AI assistance for ideation, debugging, and refinement.
