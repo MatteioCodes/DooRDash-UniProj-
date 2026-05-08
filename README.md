@@ -34,7 +34,7 @@ Each milestone folder contains:
 - JDK 8+ (or newer)
 - Any Java IDE (IntelliJ IDEA, Eclipse, VS Code) or command line
 
-### Compile (command line)
+### Compile engine sources (command line)
 
 From the repository root:
 
@@ -48,7 +48,8 @@ find DoorDashM2/src/game/engine -name "*.java" | sort > /tmp/m2_sources.txt
 javac -d /tmp/m2_out @/tmp/m2_sources.txt
 ```
 
-You can also open either milestone in your IDE and run the tests under `src/game/tests`.
+These commands compile the core engine packages only.  
+Test files under `src/game/tests` can be run from an IDE with the required JUnit setup.
 
 ## Milestones
 
