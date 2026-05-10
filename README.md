@@ -1,10 +1,10 @@
-# DooRDash University Project
+# DooRDasH University Project
 
 Java university project developed in milestone-based stages, with AI-assisted iteration during development.
 
 ## Overview
 
-DooRDash is a turn-based game engine project.  
+DooRDasH is a turn-based game engine project.  
 The repository is organized by milestones so each folder represents a specific stage of progress.
 
 ## Repository Structure
