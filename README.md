@@ -13,6 +13,7 @@ The repository is organized by milestones so each folder represents a specific s
 DooRDash-UniProj-/
 ├── DooRDasH/      # Milestone 1
 ├── DoorDashM2/    # Milestone 2
+├── doordashm3/    # Milestone 3
 └── README.md
 ```
 
@@ -46,6 +47,10 @@ javac -d /tmp/m1_out @/tmp/m1_sources.txt
 # Milestone 2 engine sources
 find DoorDashM2/src/game/engine -name "*.java" | sort > /tmp/m2_sources.txt
 javac -d /tmp/m2_out @/tmp/m2_sources.txt
+
+# Milestone 3 engine sources
+find doordashm3/src/game/engine -name "*.java" | sort > /tmp/m3_sources.txt
+javac -d /tmp/m3_out @/tmp/m3_sources.txt
 ```
 
 These commands compile the core engine packages only.  
@@ -55,7 +60,7 @@ Test files under `src/game/tests` can be run from an IDE with the required JUnit
 
 - **Milestone 1 (`DooRDasH`)**: core game implementation
 - **Milestone 2 (`DoorDashM2`)**: expanded engine and gameplay elements
-- **Milestone 3**: planned
+- **Milestone 3 (`doordashm3`)**: current milestone directory
 
 ## Notes
 
